@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #176b87;
+  width: 100%;
+  min-height: 30vh;
+  border: 5px solid #64ccc5;
+  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+}
