@@ -35,7 +35,7 @@ function App() {
       <ItemCount
         initial={1}
         stock={10}
-        onAdd={(quantity) => console.log("cantidad agregada quantity")}
+        onAdd={(quantity) => console.log("cantidad agregada", quantity)}
       />
     </div>
   );
