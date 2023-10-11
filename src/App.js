@@ -1,13 +1,16 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import NavBar from "./Components/NavBar/NavBar";
+import ItemCount from "./Components/ItemCount/ItemCount";
 import CardUser from "./Components/CardUser/CardUser";
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <NavBar />
+
       <div className="UserSection">
         <CardUser
           name="Tipos de Creatina"
@@ -28,6 +31,12 @@ function App() {
           img="https://thewildfoods.com/cdn/shop/files/shakevainilla_1.jpg?v=1691609335&width=480"
         />
       </div>
+      <ItemListContainer greeting={"Nuestros Productos"} />
+      <ItemCount
+        initial={1}
+        stock={10}
+        onAdd={(quantity) => console.log("cantidad agregada quantity")}
+      />
     </div>
   );
 }
