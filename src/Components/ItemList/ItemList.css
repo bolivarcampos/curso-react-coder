@@ -1,0 +1,5 @@
+.ListGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual tamaño */
+  grid-gap: 10px;
+}

@@ -1,9 +1,9 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import NavBar from "./Components/NavBar/NavBar";
-import ItemCount from "./Components/ItemCount/ItemCount";
 import CardUser from "./Components/CardUser/CardUser";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
@@ -32,11 +32,7 @@ function App() {
         />
       </div>
       <ItemListContainer greeting={"Nuestros Productos"} />
-      <ItemCount
-        initial={1}
-        stock={10}
-        onAdd={(quantity) => console.log("cantidad agregada", quantity)}
-      />
+      <ItemDetailContainer />
     </div>
   );
 }

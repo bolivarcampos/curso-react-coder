@@ -1,3 +1,11 @@
+.CardItem {
+  max-width: 100%;
+}
+
+.ItemImg {
+  width: 60%;
+}
+
 .Info {
   background-color: black;
   color: white;
