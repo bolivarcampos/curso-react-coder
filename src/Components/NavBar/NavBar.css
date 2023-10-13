@@ -1,24 +1,35 @@
-nav {
+.navBar {
   width: 100%;
-  background-color: black;
+  background-color: #176b87;
   min-height: 10vh;
+  padding-top: 15px;
 }
 
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.Option {
+  text-decoration: none;
+  color: black;
 }
 
-li {
-  justify-content: space-around;
+.ActiveOption {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo {
+  padding-bottom: 20px;
+  color: white;
   list-style: none;
-  font-size: 20px;
-  color: azure;
 }
 
-li:hover {
+.Categories {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Categories:hover {
   cursor: pointer;
-  color: #64ccc5;
+  color: chocolate;
 }

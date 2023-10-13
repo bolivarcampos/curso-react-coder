@@ -6,7 +6,7 @@ import "./ItemListContainer.css";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ greeting }) => {
-  const [products, setProducts] = useState([]);
+  const [product, setProducts] = useState([]);
 
   const { categoryId } = useParams();
 
@@ -25,7 +25,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <h1 className="Titulo">{greeting}</h1>
-      <ItemList products={products} />
+      <ItemList products={product} />
     </div>
   );
 };

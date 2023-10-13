@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className="navBar">
       <Link to="/">
-        <h1>Book Store</h1>
+        <h2 className="titulo">Tu Tienda de Nutrición Sana</h2>
       </Link>
 
       <div className="Categories">
@@ -17,30 +17,21 @@ const NavBar = () => {
         >
           Creatina
         </NavLink>
-        ,
+
         <NavLink
           to={`/category/Proteinas`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
           Proteinas
         </NavLink>
-        ,
+
         <NavLink
           to={`/category/Quemadores`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
           Quemadores
         </NavLink>
-      </div>
-
-      <div className="btns">
-        <ul>
-          <li className="btn-1">Inicio</li>
-          <li className="btn-2">Producto</li>
-          <li className="btn-3">Especialistas</li>
-          <li className="btn-4">Contacto</li>
-          <CartWidget />
-        </ul>
+        <CartWidget />
       </div>
     </nav>
   );
